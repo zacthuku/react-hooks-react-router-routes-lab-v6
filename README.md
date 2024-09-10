@@ -41,7 +41,7 @@ You're also free to make your own new components when you feel its warranted!
 component.)
 
 To start up the lab, first run `npm install`, as per usual. Then run `npm run
-server` to start your `json-server` and `npm start` to open the application in
+server` to start your `json-server` and `npm run dev` to open the application in
 the browser.
 
 ### routes.js
@@ -51,9 +51,9 @@ You'll be adding the routes you create to this file and saving them within the
 `/actors`, and `/movie`. The `/movie` route should also include a URL parameter
 called `id`. Don't forget that you'll need to import components into this file!
 
-### index.js
+### main.jsx
 
-Our `index.js` file is currently broken. (It's not rendering anything!) You'll
+Our `main.jsx` file is currently broken. (It's not rendering anything!) You'll
 need to update it to provide routing to our application using
 `createBrowserRouter` and `RouterProvider`.
 
