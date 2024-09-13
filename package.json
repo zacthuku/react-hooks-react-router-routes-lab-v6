@@ -25,14 +25,15 @@
     "jsdom": "^25.0.0",
     "json-server": "^1.0.0-beta.2",
     "vite": "^5.4.1",
-    "vitest": "^2.0.5"
+    "vitest": "^2.0.5",
+    "whatwg-fetch": "^3.6.2"
   },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "server": "json-server --watch db.json --port 4000",
     "lint": "eslint .",
-    "test": "vitest",
+    "test": "vitest run --reporter=@learn-co-curriculum/jest-learn-reporter --reporter=default",
     "preview": "vite preview"
   }
 }
