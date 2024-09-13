@@ -31,6 +31,16 @@ const router = createMemoryRouter(routes, {
   initialIndex: 0
 })
 
+test("renders without any errors", () => {
+  const errorSpy = vi.spyOn(global.console, "error");
+
+  render(<RouterProvider router={router}/>);
+
+  expect(errorSpy).not.toHaveBeenCalled();
+
+  errorSpy.mockRestore();
+});
+
 test("renders 'Actors Page' inside of the <h1 />", () => {
   render(<RouterProvider router={router}/>);
   const h1 = screen.queryByText(/Actors Page/);

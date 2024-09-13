@@ -9,6 +9,16 @@ const router = createMemoryRouter(routes, {
     initialIndex: 0
 })
 
+test("renders without any errors", () => {
+  const errorSpy = vi.spyOn(global.console, "error");
+
+  render(<RouterProvider router={router}/>);
+
+  expect(errorSpy).not.toHaveBeenCalled();
+
+  errorSpy.mockRestore();
+});
+
 test("renders movie's title in an h1", async () => {
   render(<RouterProvider router={router} />);
   const h1 = await screen.findByText(/Doctor Strange/);
