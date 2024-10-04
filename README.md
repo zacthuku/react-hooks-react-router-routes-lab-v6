@@ -22,17 +22,17 @@ Our `src` folder contains the following JavaScript files:
 ```txt
 src/
 ├── components/
-    ├── MovieCard.js
-    ├── NavBar.js
+    ├── MovieCard.jsx
+    ├── NavBar.jsx
     ├── NavBar.css
 └── pages/
-    ├── Actors.js
-    ├── Directors.js
-    ├── Home.js
-    ├── Movie.js
+    ├── Actors.jsx
+    ├── Directors.jsx
+    ├── Home.jsx
+    ├── Movie.jsx
 ├── index.css
-├── index.js
-├── routes.js
+├── main.jsx
+├── routes.jsx
 ```
 
 You'll need to fill out these various files to get your app up and running.
